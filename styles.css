@@ -11,7 +11,7 @@ body .index-page {
 }
 
 .fronttext {
-  margin-top: calc(50px + -70vh);
+  margin-top: calc(50px + -60vh);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -304,5 +304,6 @@ body .index-page {
   border-radius: 10px;
   text-align: center;
 }
+
 
 

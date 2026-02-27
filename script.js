@@ -112,7 +112,9 @@ const data = [
   { title: "Overwatch 2", description: "Hero Shooter Game", link: "https://playoverwatch.com/", linkText: "CLICK ME", background: "https://via.placeholder.com/500x300?text=Hero+Shooter+Game" },
   { title: "Dota 2", description: "MOBA Game", link: "https://www.dota2.com/", linkText: "CLICK ME", background: "https://via.placeholder.com/500x300?text=MOBA+Game" },
   { title: "FIFA 24", description: "Football Simulation Game", link: "https://en.wikipedia.org/wiki/FIFA_24", linkText: "CLICK ME", background: "https://via.placeholder.com/500x300?text=Football+Simulation+Game" },
-  { title: "NBA 2K24", description: "Basketball Simulation Game", link: "https://en.wikipedia.org/wiki/NBA_2K24", linkText: "CLICK ME", background: "https://via.placeholder.com/500x300?text=Basketball+Simulation+Game" }
+  { title: "NBA 2K24", description: "Basketball Simulation Game", link: "https://en.wikipedia.org/wiki/NBA_2K24", linkText: "CLICK ME", background: "https://via.placeholder.com/500x300?text=Basketball+Simulation+Game" },
+  { title: "Summertime-saga", description: "Adventure Game", link: "https://en.wikipedia.org/wiki/NBA_2K24", linkText: "CLICK ME", background: "https://via.placeholder.com/500x300?text=Basketball+Simulation+Game" }
+
 ];
 
 if (gameTitle) gameTitle.textContent = title || "Game Not Found";
@@ -292,5 +294,6 @@ menuBtn.addEventListener("click", () => {
 });
 
 searchInput.addEventListener("input", performSearch);
+
 
 

@@ -81,7 +81,7 @@ body .index-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: calc(50px + -37vh);
+  margin-top: calc(50px + -30vh);
 }
 
 #searchBar {
@@ -304,4 +304,5 @@ body .index-page {
   border-radius: 10px;
   text-align: center;
 }
+
 

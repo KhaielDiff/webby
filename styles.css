@@ -48,6 +48,19 @@ body .index-page {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login {
+  font-family: "Pixelmax", monospace;
+  color: white;
+  display: flex;
+  gap: 5px;
+}
+
 .circle#menuBtn {
   width: 40px;
   height: 40px;
@@ -304,6 +317,4 @@ body .index-page {
   border-radius: 10px;
   text-align: center;
 }
-
-
 

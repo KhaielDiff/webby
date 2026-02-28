@@ -95,6 +95,16 @@ body .index-page {
   position: relative;
 }
 
+.error-message {
+  padding: 12px;
+  color: red;
+  background: #f8d7da;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
 .close-btn {
   position: absolute;
   top: -6vh;

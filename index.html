@@ -44,8 +44,8 @@
       <div class="title"><h1>GAME CUBE</h1></div>
       <div class="right-section">
       <div class="login">
-        <div class="log-in" id="loginBtn">login</div>
-        <div class="sign-up" id="signupBtn">/ sign up</div>
+        <div class="log-in"><a href="#" id="loginBtn">login</a></div>
+        <div class="sign-up"><a href="#" id="signupBtn">/ sign up</a></div>
       </div>
       <div class="menuBTN">
         <div class="circle small" id="menuBtn">☰</div>
@@ -68,6 +68,28 @@
       </div>
     </div>
     
+  <div class="form-box active" id="login-form">
+    <form action="">
+      <button type="button" class="close-btn">&times;</button>
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" id="loginUsername" />
+      <input type="password" placeholder="Password" id="loginPassword" />
+      <button type="submit" id="loginSubmit">Login</button>
+      <p>Don't have an account? <a href="#" id="signupLink">Sign up</a> </p>
+    </form>
+  </div>
+ 
+    <div class="form-box" id="signup-form">
+      <form action="">
+        <button type="button" class="close-btn">&times;</button>
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Username" id="signupUsername" />
+        <input type="email" placeholder="Email" id="signupEmail" />
+        <input type="password" placeholder="Password" id="signupPassword" />
+        <button type="submit" id="signupSubmit">Sign Up</button>
+        <p>Already have an account? <a href="#" id="loginLink">Login</a> </p>
+      </form>
+
     </div>
     <div id="commentBar">
       <input type="text" id="commentInput" placeholder="Write a comment..." />

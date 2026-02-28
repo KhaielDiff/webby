@@ -23,6 +23,14 @@ const officialLink = document.getElementById("officialLink");
 const tipsLink = document.getElementById("tipsLink");
 const walkthroughLink = document.getElementById("walkthroughLink");
 const forumLink = document.getElementById("forumLink");
+const loginBtn = document.getElementById("loginBtn");
+const signupBtn = document.getElementById("signupBtn");
+const loginForm = document.getElementById("login-form");
+const signupForm = document.getElementById("signup-form");
+const signupLink = document.getElementById("signupLink");
+const loginLink = document.getElementById("loginLink");
+const closeBtns = document.querySelectorAll(".close-btn");
+
 
 const data = [
   { title: "Genshin-Impact", description: "Open-World RPG", link: "https://genshin.hoyoverse.com/", linkText: "Official Site", background: "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Genshin_Impact_cover.png/220px-Genshin_Impact_cover.png" },
@@ -211,6 +219,16 @@ function resetActive() {
   });
 }
 
+ function showLogin() {
+    loginForm.classList.add("active");
+    signupForm.classList.remove("active");
+  }
+
+  function showSignup() {
+    signupForm.classList.add("active");
+    loginForm.classList.remove("active");
+  }
+
 circles.forEach((circle) => {
   circle.addEventListener("click", () => {
     bottomBar.classList.remove("hidden");
@@ -291,6 +309,33 @@ menuBtn.addEventListener("click", () => {
   resultsContainer.style.display = "none";
   topBar.classList.remove("no-radius");
   frontText.style.display = "block";
+});
+
+loginBtn.addEventListener("click", function(e) {
+  e.preventDefault();
+  showLogin();
+});
+
+signupBtn.addEventListener("click", function(e) {
+  e.preventDefault();
+  showSignup();
+});
+
+signupLink.addEventListener("click", function(e) {
+  e.preventDefault();
+  showSignup();
+});
+
+loginLink.addEventListener("click", function(e) {
+  e.preventDefault();
+  showLogin();
+});
+
+closeBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    loginForm.classList.remove("active");
+    signupForm.classList.remove("active");
+  });
 });
 
 searchInput.addEventListener("input", performSearch);
